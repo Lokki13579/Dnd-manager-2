@@ -1,0 +1,4 @@
+
+class Bard:
+    name = "Бард"
+    

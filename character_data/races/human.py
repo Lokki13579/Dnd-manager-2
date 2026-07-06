@@ -1,0 +1,3 @@
+
+class Human:
+    name = "Человек"
