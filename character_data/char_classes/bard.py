@@ -1,4 +1,0 @@
-
-class Bard:
-    name = "Бард"
-    

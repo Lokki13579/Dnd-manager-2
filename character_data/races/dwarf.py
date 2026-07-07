@@ -1,3 +1,0 @@
-
-class Dwarf:
-    name = "Дварф"

@@ -1,8 +1,7 @@
-from .human import Human
-from .dwarf import Dwarf
+from .races import *
 from enum import Enum
 
 class Races(Enum):
-    human = Human
-    dwarf = Dwarf
+    human = Human()
+    dwarf = Dwarf()
 __all__ = ["Races"]

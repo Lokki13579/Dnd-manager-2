@@ -1,3 +1,0 @@
-
-class Sorcerer:
-    name = "Чародей"
