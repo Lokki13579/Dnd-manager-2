@@ -19,7 +19,10 @@ class ClassLoader(Loader):
                 target.__dict__[n] = v
                 continue
             elif n == "skills":
+                print(v[target.side_class])
+                print(target.side_class)
                 for lev in range(target.level):
+                    print(v[target.side_class][lev])
                     target.__dict__[n] += v[target.side_class][lev]
                 continue
             target.__dict__[n] = v[target.level-1]
