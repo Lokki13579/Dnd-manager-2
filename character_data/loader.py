@@ -11,18 +11,18 @@ class ClassLoader(Loader):
         for i in list(d.keys()).copy():
             if i.startswith("_"):
                 d.pop(i)
+        extras = list(target.__dict__.keys())[16:]
+        for k in extras:
+            target.__dict__.pop(k)
         target.__dict__["skills"] = []
         for n,v in d.items():
-            if n == "name" or n == "path":
+            if n in ["name", "path"]:
                 continue
-            if n == "hp_dice":
+            if n in ["hp_dice","side_classes","spells"]:
                 target.__dict__[n] = v
                 continue
             elif n == "skills":
-                print(v[target.side_class])
-                print(target.side_class)
                 for lev in range(target.level):
-                    print(v[target.side_class][lev])
                     target.__dict__[n] += v[target.side_class][lev]
                 continue
             target.__dict__[n] = v[target.level-1]
@@ -33,7 +33,6 @@ class RaceLoader(Loader):
         for i in list(d.keys()).copy():
             if i.startswith("_"):
                 d.pop(i)
-        target.__dict__["skills"] = []
         for n,v in d.items():
             if n == "name" or n == "path":
                 continue

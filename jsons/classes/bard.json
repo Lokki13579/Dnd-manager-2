@@ -1,5 +1,14 @@
 {
     "name": "Бард",
+    "side_classes": {
+    	"college_of_valor": "Коллегия доблести",
+    	"college_of_lore": "Коллегия знаний",
+    	"college_of_glamour": "Коллегия очарования",
+    	"college_of_dance": "Коллегия танца",
+    	"college_of_moon": "Коллегия луны",
+    	"college_of_spirits": "Коллегия духов"
+    },
+    "spells":[],
     "hp_dice": 8,
     "inspire_dice": [
         6, 6, 6, 6, 8, 8, 8, 8, 8, 10,

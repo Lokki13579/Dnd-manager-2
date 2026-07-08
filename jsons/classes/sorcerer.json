@@ -1,5 +1,14 @@
 {
     "name": "Чародей",
+    "side_classes": {
+    	"aberrant": "Аберрантный",
+    	"draconic": "Драконий",
+    	"clockwork": "Заводной",
+    	"wild_magic": "Дикая магия",
+    	"spellfire": "Чаропламя",
+	"shadow": "Теневой"
+    },
+    "spells":[],
     "hp_dice": 6,
     "sorcery_points": [
         0, 2, 3, 4, 5, 6, 7, 8, 9, 10,

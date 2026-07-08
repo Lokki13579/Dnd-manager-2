@@ -1,5 +1,14 @@
 {
     "name": "Артефактор",
+    "side_classes": {
+    	"alchemist": "Алхимик",
+    	"armorer": "Бронник",
+    	"artillerist": "Артиллерист",
+    	"battle_smith": "Боевой кузнец",
+    	"cartographer": "Картограф",
+    	"reanimator": "Реаниматор"
+    },
+    "spells":[],
     "hp_dice": 8,
     "known_schemas": [
         0, 4, 4, 4, 4, 5, 5, 5, 5, 6,
