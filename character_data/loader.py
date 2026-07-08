@@ -25,7 +25,13 @@ class ClassLoader(Loader):
                 for lev in range(target.level):
                     target.__dict__[n] += v[target.side_class][lev]
                 continue
+            if n in d.get("side_classes"):
+                continue
             target.__dict__[n] = v[target.level-1]
+        for_side_class = d.get(target.side_class,{})
+        for n,v in for_side_class.items():
+            target.__dict__[n] = v[target.level-1]
+
 
 class RaceLoader(Loader):
     def apply(self,target):
