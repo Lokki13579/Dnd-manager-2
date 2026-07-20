@@ -5,15 +5,17 @@ import math
 
 class Character:
     def __init__(self,
+    id,
     name="Базовое имя",
     char_class = Classes.bard,
     race = Races.human,
     level = 1):
 
+        self.id = id
         self.name = name
-        self.char_class = char_class.value
+        self._char_class = "bard"
         self.side_class = "none"
-        self.race = race.value
+        self._race = "human"
         self.level = level
         self.common_exp = 0
         self.exp = 0
