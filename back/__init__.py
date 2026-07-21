@@ -1,3 +1,5 @@
 from .SETTINGS import *
+from .character_handler import *
 
-main_init()
+init_consts()
+load_characters()
